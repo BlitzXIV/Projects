@@ -11,6 +11,7 @@
             <h1 id="title">Survey Form</h1>
 
             <p id="description">Remember to enter info as accurate as possible</p>
+            <div class="formholder">
             <form id="survey-form">
                 <div class="textblock">
                     <label id="name-label" for="name">Name</label>
@@ -25,13 +26,15 @@
                     </article>
                 </div>
                 <div class="textblock">
-                <label id="number-label" for="number">Phone-Number </label>
+                <label id="number-label" for="number">Phone Number </label>
                 <article>
                     <input placeholder="Phone Number" id="number" type="number">
                 </article>
                 </div>
                 <div class="dropmenu">
-                    <select  id="dropdown">
+                    <label for="dropdown">What field are you interested in</label>
+                    <article>
+                    <select id="dropdown">
                         <option>Select Field</option>
                         <option>Full Stack</option>
                         <option>Frontend</option>
@@ -40,9 +43,31 @@
                         <option>Cybersecurity</option>
 
                     </select>
+                    </article>
+                    <div class="radio">
+                        <article>
+                        <input type="radio" value="button 1">Useless button 1
+                        <input type="radio" value="button 2"> Useless button 2
+                        </article>
+                    </div>
+                        <div class="boxes"> 
+                        <article>
+                        What fields are you interested in   
+                        </article>
+                        <input type="checkbox" value="1">Full Stack
+                        <input type="checkbox" value="2">Frontend
+                        <input type="checkbox" value="3">Backend
+                        <input type="checkbox" value="4">DevOps
+                        <input type="checkbox" value="5">Cybersecurity
+                    </div>
+                    <article>
+                    <label>Anything else?</label>
+                    </article>
+                    <input type="textarea">
                 </div>
-               
             </form>
+            <button id="submit">Submit</button>
+        </div>
         </main>
     </body>
 </html>

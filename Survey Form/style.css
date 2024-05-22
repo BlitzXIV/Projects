@@ -5,20 +5,51 @@
 #description{
     text-align: center;
 }
-body{
-    background-color: rgb(238, 186, 42);
+.formholder{
+    background-color: #EE962A;
+    margin:50px;
+    padding: auto;
+    text-align: center;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 50px;
+
 }
+body{
+    background-color: #eeba2a;
+}
+
 article{
     text-align: center ;
-    margin-bottom:20px;    
+    margin:0 auto;    
 }
 .textblock{
-font-family: sans-serif;
-text-align: center;
-margin-top: 10px;
-margin-bottom: 10px;    
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.textblock input{
+border-radius: 4px;
+border: solid 2px #9E7400;
+width: 500px;
+height: 30px;  
+}
+select{
+    width: 509px;
+    height: 30px;
+    border-radius: 4px;
+    border: solid 2px #9E7400;
 }
 
 .dropmenu {
-width: 200px; 
-}
+ text-align: center;
+ font-family: sans-serif;
+ }
+ .radio{
+    margin: 10px;
+ }
+ .boxes{
+    margin: 3-px;
+ }
+ #submit{
+    text-align: center;
+ }
