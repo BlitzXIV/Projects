@@ -1,0 +1,24 @@
+#title{
+    font-family: impact;
+    text-align: center;
+}
+#description{
+    text-align: center;
+}
+body{
+    background-color: rgb(238, 186, 42);
+}
+article{
+    text-align: center ;
+    margin-bottom:20px;    
+}
+.textblock{
+font-family: sans-serif;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;    
+}
+
+.dropmenu {
+width: 200px; 
+}

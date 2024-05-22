@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Survey Form</h1>
+
+            <p id="description">Remember to enter info as accurate as possible</p>
+            <form id="survey-form">
+                <div class="textblock">
+                    <label id="name-label" for="name">Name</label>
+                    <article>
+                        <input placeholder="Name" id="name" type="text">
+                    </article>
+                </div>
+                <div class="textblock">
+                    <label id="email-label" for="email">Email</label>
+                    <article>
+                        <input placeholder="Email" id="email" type="text">
+                    </article>
+                </div>
+                <div class="textblock">
+                <label id="number-label" for="number">Phone-Number </label>
+                <article>
+                    <input placeholder="Phone Number" id="number" type="number">
+                </article>
+                </div>
+                <div class="dropmenu">
+                    <select  id="dropdown">
+                        <option>Select Field</option>
+                        <option>Full Stack</option>
+                        <option>Frontend</option>
+                        <option>Backend</option>
+                        <option>DevOps</option>
+                        <option>Cybersecurity</option>
+
+                    </select>
+                </div>
+               
+            </form>
+        </main>
+    </body>
+</html>
