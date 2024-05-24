@@ -1,13 +1,14 @@
-.header {
+.header{
     display: flex;
-    align-items: center;
-    
+    align-items:flex-start ;
 }
-
 .leftspace {
     margin-right: 20px;
+    margin-bottom: 100%;
 }
-
+.container{
+display: flex;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,9 +17,12 @@
     line-height: 13px;
     width: 100%;
     border-bottom: dotted #000;
-    margin-bottom:auto  ;
-}
 
-.navright img {
-    margin-right: 10px;
+    padding: 6px 0 7px;
+}
+.menu{
+
+}
+body{
+    margin-top: 0;     
 }
