@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -13,15 +13,15 @@
         <div class="UI">
             <form id="form">
             <h2>Enter Something for your To-Do list</h2>
-            <input required type="text" id="name" name="name" placeholder="Ex. Sweep the house">
-            <button type="submit">Submit</button>
+            <input required type="text" id="item" placeholder="Ex. Sweep the house">
+            <button id="button" type="submit">Submit</button>
             </form>
         </div>
           <h2>Your To Do list will appear below:</h2> 
-          <p>(maximum 20 items)</p>
-        <div class="todolist">
-
+          <p>(maximum 10 items)</p>
+        <div id="todolist">
         </div> 
     </div>
+<script src="./script.js"></script>   
 </body>
 </html>
