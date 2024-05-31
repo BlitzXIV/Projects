@@ -1,21 +1,28 @@
 .container{
-    background-color: rgb(232, 182, 121);
-    width: 80%;
+    width: 40%;
     height: 80%;
     margin: auto;
     text-align: center;
     border-radius: 10px;
     border: solid 2px;
     margin-top: 5%;
-    font-family: monospace;
+    background-image: url(assets/yellow-notebook-paper-background-design-template-d7dfa26f8c8c759652e2521f0ecd24eb_screen.jpg);
     
-   
-
-
-html,body {
- height:100%; 
 }
 
+#todolist{
+ font-size: 20px;
+
+
+}
+
+
+html{
+ min-height: 100vh;
+ font-family:monospace;
+ font-size: ;
+ background-color: rgba(255, 178, 102, 0.5);
+}
 
 .UI{
     background-color: white;
@@ -26,3 +33,5 @@ html,body {
     border: solid 1px;
     
 }
+
+
