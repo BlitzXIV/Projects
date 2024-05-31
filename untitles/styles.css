@@ -10,17 +10,28 @@
     
 }
 
-#todolist{
+#todolist p{
  font-size: 20px;
+word-wrap: break-word;
 
+}
 
+#todolist p:hover button{
+ display: inline-block; 
+}
+
+#todolist p button{
+ margin-left: 10px ;   
+ border-radius: 4px;
+ font-family: monospace; 
+ background-color:rgba(255, 178, 102, 1) ;
+ display: none;
 }
 
 
 html{
  min-height: 100vh;
  font-family:monospace;
- font-size: ;
  background-color: rgba(255, 178, 102, 0.5);
 }
 
