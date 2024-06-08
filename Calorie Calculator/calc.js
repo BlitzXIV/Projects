@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', function(){
     let finCalContain = document.getElementById('finCalContain');
     const calcBtn = document.getElementById('button');
     let finLabel = document.createElement('p')
+    const mealBtn = document.createElement('button');
+    let mealTotal = 0
+    const mealLabel =  document.createElement('p')
+    let finalCals;
+    const reset = document.createElement('button')
+    reset.textContent = 'Reset'
+
+    const mealContain = document.getElementById('mealContain');
+    mealBtn.textContent = 'Add to Meal'
 
         form.addEventListener('submit', function(event){
             event.preventDefault();
@@ -14,16 +23,37 @@ document.addEventListener('DOMContentLoaded', function(){
 
            
         
-            var calsPerGram = cals / serv;
-            var finalCals = calsPerGram * measure;
-            finalCals = finalCals.toFixed(1)
+            let calsPerGram = cals / serv;
+            finalCals = calsPerGram * measure;
+            finalCals = parseFloat(finalCals.toFixed(1))
 
             
                
-            inLabel.textContent = 'Total Calories in Food ' + finalCals 
+            finLabel.textContent = 'Calories in Food ' + finalCals 
             finCalContain.appendChild(finLabel);
-           
-        
-    });
+            mealContain.appendChild(mealBtn)
+            mealContain.appendChild(reset)
+         });
 
-});
+        mealBtn.addEventListener('click', function(){
+            mealTotal += finalCals
+            mealLabel.textContent = 'Total Meal Calories ' + mealTotal;
+            reset.addEventListener('click' , function(){
+            mealContain.removeChild(mealBtn)
+            mealContain.removeChild(mealLabel)
+            mealContain.removeChild(reset)
+            finCalContain.removeChild(finLabel)
+            finalCals = 0
+            mealTotal = 0
+            })
+
+            
+        });
+
+            
+            mealContain.appendChild(mealLabel);
+            
+
+})
+
+

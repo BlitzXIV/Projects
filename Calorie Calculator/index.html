@@ -8,25 +8,31 @@
     <script src="calc.js"></script>
 </head>
 <body>
-    <div id="contain" class="container">
+    <div class="container">
         <form id="form">
             Calories Per Serving 
             <br>
-            <input id="calPerServ" type="number">
+            <input required id="calPerServ" type="number">
             <br>
             Serving Amount
             <br>
-            <input id="servAmt" type="number">
+            <input required id="servAmt" type="number">
             <br>
             Measured Amount
             <br>
-            <input id="cstmServ" type="number">
+            <input required id="cstmServ" type="number">
             <br>
             <button id="button" type="submit">Calculate</button>
         </form>
         
-        <div id="finCalContain"></div>
+        <div id="finCalContain">
+
+        </div>
+        <div id="mealContain">
+            
+        </div>
     </div>
+
 
 </body>
 </html>
